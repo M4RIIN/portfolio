@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CI/CD</title>
+    <meta name="description" content="Case study page of Project" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/marin.png"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Nicolas MARIN</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Menu </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">A propos </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projets
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+            <!-- <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Échalotte </a>
+            </li> -->
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+            <!-- <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Échalotte </a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">CI/CD</h1>
+        <div class="project-cs-hero__info">
+
+        </div>
+        <div class="project-cs-hero__cta">
+          <a href="https://learn.microsoft.com/fr-fr/dotnet/csharp/" class="btn btn--bg" target="_blank">LIEN</a>
+        </div>
+      </div>
+    </section>
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont" style="text-align:center">
+            <img
+              style="max-width: 50%;"
+              src="./assets/png/cicd.png"
+              alt="Project Image"
+              class="project-details__showcase-img"
+            />
+          </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Définition</h3>
+              <p class="project-details__desc-para">
+                CI/CD signifie « Continuous Integration/Continuous Delivery », ou intégration continue/livraison continue ; c’est une méthode de mise en œuvre logicielle utilisée par les équipes de développement pour apporter des modifications de code plus fréquentes et plus fiables. 
+                <br>
+                Le « CI » de CI/CD désigne l'« intégration continue », un processus d'automatisation pour les développeurs. L'intégration continue consiste, pour les développeurs, à apporter régulièrement des modifications, à les tester, puis à les fusionner.
+                <br>
+                Le « CD » de CI/CD  « déploiement continu », permet aux les modifications apportées par le développeur à une application d'être automatiquement testées et téléchargées dans un référentiel par exemple GitHub, GitLab ou un repository si on gère des des jar avec Maven.
+              </p>
+              <br>
+              <p class="project-details__desc-para">
+              C'est une notion importante pour les entreprises et les equipes de developpeurs, car cela leur permet de gagner beaucoup de temps et de travailler à plusieurs tout en mettant à jour la solution en étant sûr 
+              que le code poussé suis certaines exigence et ne contient pas de bug.
+              </p>
+            </div>
+
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Apprentissage</h3>
+              <p class="project-details__desc-para">
+               J'ai découvert et appris à mettre en place une pipeline de CI/CD lors de mon alternance chez BERGER-LEVRAULT / SIGEMS. 
+               Nous utilisions GitLab CI afin de pouvoir verifier que le code poussé n'affecté la validation des test unitaire, que le projet 
+               pouvons encore être build et une derniere étape était de verifier la qualité du code via l'outil SonarQube.
+               Lorsque que la pipeline était correctement passé, le merge avec la branche principale était effectué et une nouvelle pipeline était lancée 
+               avec en plus une étape de déployement du jar de notre solution dans un repository Maven grâce à Forge.
+               <br>
+               J'ai eu l'occasion d'ameliorer cette pipeline en ajoutant le fait de garder entre les différentes etapes de la pipeline les jar, afin de gagner du temps et ameliorer la vitesse da la pipeline.
+               En plus de cela j'ai eu l'occasion sur un projet personel multi-module Maven de mettre en place un pipeline mais sur GitHub cette fois-ci : <a href="https://github.com/M4RIIN/clean-archi"> clean architecture</a>
+               </p>
+              <h3 class="project-details__content-title">Autocritique</h3>
+              <p class="project-details__desc-para">
+                Je pense que c'est une compétence obligatoire pour un ingénieur logiciel, il me reste néamoins énormement à apprendre, je sais cependant 
+                mettre en place une environnement de CI/CD dans le cadre professioinel plutot efficacement. Je compte continuer à me former à cette compétence 
+                grace à divers sources de formations en ligne.
+              </p>
+             
+            </div>
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Projet lié</h3>
+              <div class="skills">
+                <div class="skills__skill">
+                  <a href="./liveSplitInformation.html">
+                  LiveSplit Information
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/twitter-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/yt-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon main-footer__icon--mr-none"
+                  src="./assets/png/insta-ico.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Nicolas MARIN</h4>
+            <p class="main-footer__short-desc">
+              Portfolio réalisé afin de valider mon cursurs d'ingenieur logiciel.
+            </p>
+          </div>
+        </div>
+
+        <div class="main-footer__lower">
+          &copy; Copyright 2022. Made by
+          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
+            >Nicolas MARIN</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
