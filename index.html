@@ -48,7 +48,52 @@
             <!-- <li class="header__link-wrapper">
               <a href="./index.html#contact" class="header__link"> Échalotte </a>
             </li> -->
+            <li>
+              <div class="dropdown">
+                <button class="dropbtn">Compétences techniques</button>
+                <div class="dropdown-content">
+                  <a href="./angular.html">
+                    Angular
+                  </a>
+                  <a href="./springboot.html">
+                    SPRING BOOT
+                  </a>
+                  <a href="./java.html">
+                    Java
+                  </a>
+                  <a href="./cicd.html">
+                    CI/CD
+                  </a>
+                  <a href="./csharp.html">
+                    C#
+                  </a>
+                  <a href="./sql.html">
+                    SQL
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown">
+                <button class="dropbtn">Compétences transverses</button>
+                <div class="dropdown-content">
+                  <a href="./agilite.html">
+                    Agilité
+                  </a>
+                  <a href="./pedagogue.html">
+                    Pédagogue
+                  </a>
+                  <a href="./travail-equipe.html">
+                    Travail d'équipe
+                  </a>
+                  <a href="./curiosite.html">
+                    Curiosité
+                  </a>
+                </div>
+              </div>
+            </li>
           </ul>
+
           <div class="header__main-ham-menu-cont">
             <img
               src="./assets/svg/ham-menu.svg"
@@ -129,10 +174,10 @@
         <h2 class="heading heading-sec heading-sec__mb-med">
           <span class="heading-sec__main">à propos de moi</span>
           <span class="heading-sec__sub">
-            Passionné d'informatique, sensible aux bonnes pratiques
+            Passionné d'informatique, sensible aux bonnes pratiques, 
             je travaille constamment mes compétences afin de pouvoir endosser
             la casquette d'<strong>Architecte Logiciel</strong>. Principes <strong>SOLID</strong>, <strong>Design Pattern</strong>, <strong>TDD</strong> sont les outils que j'utilise.
-            Voulant me dépasser quotidiennement je réalise régulièrement des <strong>katas</strong></storng>,
+            Voulant me dépasser quotidiennement, je réalise régulièrement des <strong>katas</strong></storng>,
             mini-projets.
             
           </span>
@@ -147,8 +192,14 @@
                 écouter et me remettre en question. Soucieux du bien-être des autres
                 j'essaie de mettre l'autre en avant.
                 <br>
-                J'aime réfléchir en amont pour proposer une solution élégante qui me plait.
-                Je dévore régulierement les livres de Robert C. Martin (Uncle Bob).                
+                J'aime réfléchir en amont pour proposer une solution élégante qui me plaît.
+                Je dévore régulièrement les livres de Robert C. Martin (Uncle Bob).
+                <br>
+                Mes valeurs sont l'intégrité, loyauté et respect.
+                Passionné par l'informatique, le cinéma et la musique.
+                <br>
+                J'aime pouvoir régler des problèmes du quotidien de différentes manières aussi bien par la biai du bricologae que par celui de la combinaison de l'éléctronique et de l'informatique.
+                Je suis aussi batteur, la batterie ryhtme une musique et dirige le rythme au manière d'un chef de projet afin d'amener à bon port les autres membres du groupe.                
             </div>
             <a href="#contact" class="btn btn--med btn--theme dynamicBgClr"
               >Contacter</a
@@ -213,58 +264,66 @@
           <div class="history-tl-container">
             <ul class="tl">
               <li class="tl-item" ng-repeat="item in retailer_history">
-                <div class="timestamp">
-                  2020 - 2023
-              </div>
-              <div class="item-title">ALTERNANCE SIGEMS / BERGER-LEVRAULT ( 2 ANS )</div>
-              <div class="item-detail">Création d'une application web permettant la gestion du séjour administratif du patient au</div>
-              <div class="item-detail">sein des hopitaux et des cliniques - Angular / Java ( SpringBoot )</div>
+                <a href="https://www.berger-levrault.com/fr/">
+
+                  <div class="timestamp">
+                    2020 - 2023
+                  </div>
+                  <div class="item-title">ALTERNANCE SIGEMS / BERGER-LEVRAULT ( 2 ANS )</div>
+                  <div class="item-detail">Création d'une application web permettant la gestion du séjour administratif du patient au</div>
+                  <div class="item-detail">sein des hopitaux et des cliniques - Angular / Java ( SpringBoot )</div>
+                </a>
             </li>
             <li class="tl-item" ng-repeat="item in retailer_history">
+              <a href="https://mon.certificat-voltaire.fr/verification-certificat?code=4MK6D3">
               <div class="timestamp">
                 2019
               </div>
               <div class="item-title">CERTIFICATION VOLTAIRE</div>
               <div class="item-detail">548 points</div>
               <div class="item-detail">CSCV : 4MK6D3</div>
-            </li>
-            <li class="tl-item" ng-repeat="item in retailer_history">
-              <div class="timestamp">
-                2019
-              </div>
-              <div class="item-title">PROJET IN'TECH -RESTO PRO CONSULT</div>
-              <div class="item-detail">Création d'une application android permettant le suivi du PMS</div>
-              <div class="item-detail">( Plan de Maîtrise Sanitaire ) - Java Android</div>
+            </a>
             </li>
 			<li class="tl-item" ng-repeat="item in retailer_history">
-              <div class="timestamp">
-                2018
-              </div>
-              <div class="item-title">ENTRÉE IN'TECH SUD AGEN</div>
-              <div class="item-detail">École d'informatique à vocation professionnalisante</div>
-              <div class="item-detail">Délivre des titres RNCP niveau 1 (Bac+5) en Ingénierie du logiciel</div>
+        <a href="https://www.intechinfo.fr">
+
+          <div class="timestamp">
+            2018
+          </div>
+          <div class="item-title">ENTRÉE IN'TECH SUD AGEN</div>
+          <div class="item-detail">École d'informatique à vocation professionnalisante</div>
+          <div class="item-detail">Délivre des titres RNCP niveau 1 (Bac+5) en Ingénierie du logiciel</div>
+        </a>
             </li>
             <li class="tl-item" ng-repeat="item in retailer_history">
-              <div class="timestamp">
-                2018
-              </div>
-              <div class="item-title">STAGE THALES AVIONICS ( 3 MOIS )</div>
-              <div class="item-detail">Création d'un outil d'optimisation du carburant pour les compagnies aérienne - Python</div>
-              <div class="item-detail">Création d'un scanner de QR CODE sur Raspberry Pi</div>
+              <a href="https://www.thalesgroup.com/fr/aeronautique">
+                <div class="timestamp">
+                  2018
+                </div>
+                <div class="item-title">STAGE THALES AVIONICS ( 3 MOIS )</div>
+                <div class="item-detail">Création d'un outil d'optimisation du carburant pour les compagnies aérienne - Python</div>
+                <div class="item-detail">Création d'un scanner de QR CODE sur Raspberry Pi</div>
+                <div class="item-detail">Réalisé suite à mon DUT GEII</div>
+              </a>
             </li>
             <li class="tl-item" ng-repeat="item in retailer_history">
-              <div class="timestamp">
-                2016 - 2018
-              </div>
-              <div class="item-title">IUT GEII ( GÉNIE ÉLÉCTRIQUE & INFORMATIQUE INDUSTRIELLE )</div>
-              <div class="item-detail">Faculté Paul Sabatier, Toulouse</div>
+              <a href="https://iut.univ-tlse3.fr/genie-electrique-informatique-industrielle">
+                <div class="timestamp">
+                  2016 - 2018
+                </div>
+                <div class="item-title">IUT GEII ( GÉNIE ÉLÉCTRIQUE & INFORMATIQUE INDUSTRIELLE )</div>
+                <div class="item-detail">Faculté Paul Sabatier, Toulouse</div>
+                <div class="item-detail">Apprentissage de l'éléctronique, de la physique et enseignement scientifique</div>
+              </a>
             </li>
             <li class="tl-item" ng-repeat="item in retailer_history">
-              <div class="timestamp">
-                2015
-              </div>
-              <div class="item-title">BACCALAURÉAT SCIENTIFIQUE</div>
-              <div class="item-detail">Lycée Clémence Royer, Fonsorbes</div>
+              <a href="https://clemence-royer.mon-ent-occitanie.fr">
+                <div class="timestamp">
+                  2015
+                </div>
+                <div class="item-title">BACCALAURÉAT SCIENTIFIQUE</div>
+                <div class="item-detail">Lycée Clémence Royer, Fonsorbes</div>
+              </a>
             </li>
           </ul>
         </div>
@@ -317,8 +376,8 @@ C'est une liste de projets qui me tiennent à coeur ou qui sont important dans m
             <div class="projects__row-content">
               <h3 class="projects__row-content-title">LiveSplit Informations</h3>
               <p class="projects__row-content-desc">
-                LiveSplit Informations est un projet personel basé sur le logiciel Open Source LiveSplit qui permet aux speedrunners de pouvoir
-                timer leur courses avec précision. 
+                LiveSplit Informations est un projet personnel basé sur le logiciel Open Source LiveSplit qui permet aux speedrunners de pouvoir
+                timer leurs courses avec précision. 
               </p>
               <a
                 href="./liveSplitInformation.html"
@@ -364,7 +423,7 @@ C'est une liste de projets qui me tiennent à coeur ou qui sont important dans m
             <div class="projects__row-content">
               <h3 class="projects__row-content-title">RPC</h3>
               <p class="projects__row-content-desc">
-                RPC est une application mobile Android réalisée durant mon cursus à IN'TECH Sud Agen permmettant de respecter le Plan de Mesure Sanitaire ( PMS ).
+                RPC est une application mobile Android réalisée durant mon cursus à IN'TECH Sud Agen permettant de respecter le Plan de Mesure Sanitaire (PMS).
               </p>
               <a
                 href="./rpc.html"
